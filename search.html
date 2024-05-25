@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Booking</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for overlaying form on the image */
+    .background-image {
+      background-image: url('C:\Users\maniv\OneDrive\Pictures\Screenshots\Screenshot 2023-10-08 204553.png'); /* Replace 'your-image-url.jpg' with your image path */
+      background-size: cover;
+      height: 100vh;
+      position: relative;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      max-width: 500px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9); /* Adjust form background color and opacity */
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Main Content with Image Background -->
+<div class="background-image">
+  <div class="overlay">
+    <div class="container form-container">
+      <h1 class="text-center mb-4">Welcome to Bus Booking</h1>
+  
+      <!-- From - To Form -->
+      <form>
+        <div class="form-group">
+          <label for="inputFrom">From</label>
+          <input type="text" class="form-control" id="inputFrom" placeholder="Enter From Location">
+        </div>
+        <div class="form-group">
+          <label for="inputTo">To</label>
+          <input type="text" class="form-control" id="inputTo" placeholder="Enter To Location">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Search Buses</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS, Popper.js, jQuery (needed for Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
